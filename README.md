@@ -2,6 +2,10 @@
 
 An experimental repository aimed to render scientific Jupyter notebooks to HTML pages that can be published on static websites. This repository should serve as a minimum viable product for future work.
 
+## Pages
+
+See the [rendered notebook](https://lorenghoh.github.io/nb-pages/sample.html)
+
 ## Github Actions Status
 
 ![nb2html](https://github.com/lorenghoh/nb-pages/actions/workflows/nb2html.yml/badge.svg)
