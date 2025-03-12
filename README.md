@@ -4,7 +4,7 @@ An experimental repository aimed to render scientific Jupyter notebooks to HTML 
 
 ## Pages
 
-See the [rendered notebook](https://lorenghoh.github.io/nb-pages/sample.html)
+See the [rendered notebook](https://lorenghoh.github.io/nb-pages/notebooks/sample.html).
 
 ## Github Actions Status
 
