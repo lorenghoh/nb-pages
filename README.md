@@ -4,4 +4,4 @@ An experimental repository aimed to render scientific Jupyter notebooks to HTML 
 
 ## Github Actions Status
 
-https://github.com/OWNER/REPOSITORY/actions/workflows/WORKFLOW-FILE/badge.svg
+![nb2html](https://github.com/OWNER/REPOSITORY/actions/workflows/WORKFLOW-FILE/badge.svg)
