@@ -18,15 +18,12 @@ jobs:
       - name: Install nbconvert
         run: pip install nbconvert
 
-      - name: Convert all ipynb files to html
+      - name: Convert all .ipynb files to html
         run: find . -name '*.ipynb' -type f -execdir jupyter nbconvert --template classic --to html {} \;
-
-    #   - name: Push notebooks folder to the build branch
-    #     uses: s0/git-publish-subdir-action@develop
-    #     env:
-    #       REPO: self
-    #       FOLDER: notebooks
-    #       BRANCH: main
-    #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #       MESSAGE: "Build: ({sha}) {msg}"
-    #       SQUASH_HISTORY: true
+        
+      - name: Commit updated notebook
+        uses: EndBug/add-and-commit@v9.1.4
+        with:
+          author_name: github-actions
+          message: "Translate Jupyter Notebook to HTML"
+          add: "notebooks/*.html"
